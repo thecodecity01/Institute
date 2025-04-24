@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codecity Kyun Chunein? | Codecity Institute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="./Frame 577.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #4f46e5;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .instructor-card {
+            transition: all 0.3s ease;
+        }
+        
+        .instructor-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .value-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .value-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            background-color: #4f46e5;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-xl">CC</div>
+                <span class="ml-3 text-xl font-semibold text-gray-800">Codecity Institute</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="./index.html" class="nav-link text-gray-600 hover:text-indigo-600">Home</a>
+                <a href="./courses.html" class="nav-link text-gray-600 hover:text-indigo-600">Courses</a>
+                <a href="./why-us.html" class="nav-link text-indigo-600 font-medium">About</a>
+                <a href="./contact.html" class="nav-link text-gray-600 hover:text-indigo-600">Contact</a>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 right-0 bg-white shadow-md p-4">
+            <a href="./index.html" class="block py-2 text-gray-600 hover:text-indigo-600">Home</a>
+            <a href="./courses.html" class="block py-2 text-gray-600 hover:text-indigo-600">Courses</a>
+            <a href="./why-us.html" class="block py-2 text-indigo-600 font-medium">About</a>
+            <a href="./contact.html" class="block py-2 text-gray-600 hover:text-indigo-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Codecity Kyun Chunein?</h1>
+            <p class="text-xl md:text-2xl">Ahmedabad ka best IT training institute jo aapko industry-ready banata hai!</p>
+        </div>
+    </header>
+
+    <!-- Institute Story Section -->
+    <section class="py-16 container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Hamari Kahani</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <p class="text-gray-700 mb-4">
+                    Codecity Institute ki shuruat 2024 mein ek simple idea se hui - Ahmedabad mein quality IT training provide karna jo students ko directly industry ke liye taiyar kare. Hum chahte the ki har student ko sirf certificate nahi, balki real skills mile jo unhe job market mein stand out karne mein help kare.
+                </p>
+                <p class="text-gray-700">
+                    Aaj hum Ahmedabad ke leading IT training institute hain jahan students practical knowledge ke saath job-ready hoke nikalte hain. Humara vision hai har student ko industry ke latest demands ke hisab se train karna, taki woh apne career mein jaldi success pa sakein.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Approach Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Hamari Teaching Approach</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="feature-card bg-white p-6 rounded-lg">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-laptop-code text-indigo-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Practical Learning</h3>
+                            <p class="text-gray-600">
+                                Hum sirf theory nahi padhate - har concept ko practical projects ke through samjhate hain. Har class mein hands-on coding aur design practice karvate hain.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card bg-white p-6 rounded-lg">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-briefcase text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Real-World Projects</h3>
+                            <p class="text-gray-600">
+                                Students ko actual client projects par kaam karne ka mauka milta hai, jisse unka portfolio strong banta hai aur job interviews mein confidence aata hai.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="py-16 container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Meet the Instructors</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Instructor 1 -->
+            <div class="instructor-card bg-white p-6 rounded-lg shadow-md">
+                <div class="bg-gray-200 h-48 rounded-md mb-4 flex items-center justify-center text-gray-500">
+                    <span>Instructor photo yahan add karein</span>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">Mr. A. Sharma</h3>
+                <p class="text-indigo-600 mb-3">Senior Web Developer & Trainer</p>
+                <p class="text-gray-600">
+                    12+ years of experience in web development. Worked with TCS, Infosys before starting training career. Specializes in JavaScript frameworks.
+                </p>
+            </div>
+            
+            <!-- Instructor 2 -->
+            <div class="instructor-card bg-white p-6 rounded-lg shadow-md">
+                <div class="bg-gray-200 h-48 rounded-md mb-4 flex items-center justify-center text-gray-500">
+                    <span>Instructor photo yahan add karein</span>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">Ms. P. Patel</h3>
+                <p class="text-indigo-600 mb-3">Graphic Design Expert</p>
+                <p class="text-gray-600">
+                    8 years in graphic design industry. Adobe Certified Expert. Trained 500+ students in Photoshop, Illustrator and UI/UX design.
+                </p>
+            </div>
+            
+            <!-- Instructor 3 -->
+            <div class="instructor-card bg-white p-6 rounded-lg shadow-md">
+                <div class="bg-gray-200 h-48 rounded-md mb-4 flex items-center justify-center text-gray-500">
+                    <span>Instructor photo yahan add karein</span>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">Mr. R. Khan</h3>
+                <p class="text-indigo-600 mb-3">Full Stack Developer</p>
+                <p class="text-gray-600">
+                    MERN stack specialist with 6 years experience. Passionate about teaching coding fundamentals and problem-solving skills.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- USPs Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Hamare Fayde</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <!-- USP 1 -->
+                <div class="feature-card bg-white p-6 rounded-lg">
+                    <div class="bg-indigo-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-project-diagram text-indigo-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Practical Training</h3>
+                    <p class="text-gray-600">
+                        Har course mein 5+ real-life projects karate hain jo aapke portfolio ko strong banate hain. Theory ke saath practical knowledge zaroori hai!
+                    </p>
+                </div>
+                
+                <!-- USP 2 -->
+                <div class="feature-card bg-white p-6 rounded-lg">
+                    <div class="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-chalkboard-teacher text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Experienced Instructors</h3>
+                    <p class="text-gray-600">
+                        Humare trainers industry experts hain jo aapko latest technologies aur best practices sikhate hain. Unka experience aapke liye faydemand hai.
+                    </p>
+                </div>
+                
+                <!-- USP 3 -->
+                <div class="feature-card bg-white p-6 rounded-lg">
+                    <div class="bg-green-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-briefcase text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Career Support</h3>
+                    <p class="text-gray-600">
+                        Course complete hone ke baad bhi hum aapke saath hain - resume review, mock interviews, aur job guidance provide karte hain.
+                    </p>
+                </div>
+                
+                <!-- USP 4 -->
+                <div class="feature-card bg-white p-6 rounded-lg">
+                    <div class="bg-purple-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-clock text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Flexible Batches</h3>
+                    <p class="text-gray-600">
+                        Students ki convenience ke liye humare pass morning, evening, weekend batches available hain. Aap apne hisab se time choose kar sakte hain.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Hamara Institute</h2>
+        
+        <div class="bg-gray-200 p-12 rounded-lg text-center">
+            <p class="text-gray-600 text-lg">Classroom & Lab photos yahan add karein</p>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-16 bg-indigo-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Hamare Core Values</h2>
+            
+            <div class="space-y-4">
+                <div class="value-item">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-1">Quality Education</h3>
+                    <p class="text-gray-600">
+                        Hum hamesha latest curriculum aur updated technologies par focus karte hain. Har student ko best possible training dena humara aim hai.
+                    </p>
+                </div>
+                
+                <div class="value-item">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-1">Student Success</h3>
+                    <p class="text-gray-600">
+                        Har student ka career growth humare liye important hai. Hum unhe job placements tak support karte hain.
+                    </p>
+                </div>
+                
+                <div class="value-item">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-1">Integrity</h3>
+                    <p class="text-gray-600">
+                        Hum hamesha honest aur transparent rehte hain. No false promises - jo sikhaate hain woh industry mein actual use hota hai.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Taiyar Ho Apna Career Badalne Ke Liye?</h2>
+            <p class="text-xl mb-8">Hamare courses dekhne ke liye yahan click karein aur apni learning journey start karein!</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="courses.html" class="bg-white text-indigo-600 px-8 py-3 rounded-md font-bold hover:bg-gray-100 transition duration-300">
+                    Courses Dekhein <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded-md font-bold hover:bg-white hover:text-indigo-600 transition duration-300">
+                    Contact Karein <i class="fas fa-phone-alt ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-xl">CC</div>
+                        <span class="ml-3 text-xl font-semibold">Codecity Institute</span>
+                    </div>
+                    <p class="text-gray-400">Apne career ko next level pe le jane ka best platform. Humare saath seekho aur successful bano!</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="courses.html" class="text-gray-400 hover:text-white transition">Courses</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Courses</h3>
+                    <ul class="space-y-2">
+                        <li><a href="courses.html#graphic-design" class="text-gray-400 hover:text-white transition">Graphic Design</a></li>
+                        <li><a href="courses.html#web-development" class="text-gray-400 hover:text-white transition">Web Development</a></li>
+                        <li><a href="courses.html#computer-basics" class="text-gray-400 hover:text-white transition">Computer Basics</a></li>
+                        <li><a href="courses.html#programming" class="text-gray-400 hover:text-white transition">Programming</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-3"></i> 35-38, National Plaza, Juhapura</li>
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-3"></i> 9925407854 / 8866572295</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-3"></i> info@codecityinstitute.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Codecity Institute. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = document.getElementById('mobile-menu-button');
+            
+            if (!mobileMenu.contains(e.target) && !menuButton.contains(e.target) && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

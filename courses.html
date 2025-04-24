@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codecity Institute - Hamare Courses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="./Frame 577.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .course-card {
+            transition: all 0.3s ease;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #4f46e5;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-xl">CC</div>
+                <span class="ml-3 text-xl font-semibold text-gray-800">Codecity Institute</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="./index.html" class="nav-link text-gray-600 hover:text-indigo-600">Home</a>
+                <a href="./courses.html" class="nav-link text-indigo-600 font-medium">Courses</a>
+                <a href="./why-us.html" class="nav-link text-gray-600 hover:text-indigo-600">About</a>
+                <a href="./contact.html" class="nav-link text-gray-600 hover:text-indigo-600">Contact</a>
+            </div>
+            
+            <button class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Hamare Courses</h1>
+            <p class="text-xl md:text-2xl mb-8">Seekhein Humare Saath - Apna Career Next Level Pe Le Jao!</p>
+            <a href="#courses" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 inline-block">
+                Explore Courses <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16 container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Apni Pasand ka Course Select Karo</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Humare courses industry experts ne design kiye hain jo aapko practical skills dete hain job market mein compete karne ke liye.</p>
+        </div>
+
+        <!-- Graphic Design Course -->
+        <section id="graphic-design" class="mb-16">
+            <div class="course-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-gradient-to-br from-purple-500 to-indigo-600 p-8 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-palette text-6xl mb-4"></i>
+                            <h3 class="text-2xl font-bold">Complete Graphic Design Course</h3>
+                            <p class="mt-2 opacity-90">3 Mahine</p>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-2/3 p-8">
+                        <p class="text-gray-700 mb-6">
+                            Yeh course aapko professional graphic designer bana dega! Photoshop, CorelDraw aur Figma seekh kar aap freelance projects kar sakte hain ya design agency join kar sakte hain.
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i> Kya Seekhoge:
+                                </h4>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li>Photoshop basics aur tools</li>
+                                    <li>CorelDraw se vector graphics</li>
+                                    <li>Logo design techniques</li>
+                                    <li>Poster aur brochure design</li>
+                                    <li>Social media graphics creation</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                    <i class="fas fa-user-graduate text-blue-500 mr-2"></i> Kon Join Kar Sakta Hai:
+                                </h4>
+                                <p class="text-gray-600">Beginners se le kar intermediate tak sab ke liye. Creativity pasand hone chahiye!</p>
+                                
+                                <h4 class="font-semibold text-gray-800 mt-4 mb-2 flex items-center">
+                                    <i class="fas fa-laptop-code text-purple-500 mr-2"></i> Software & Tools:
+                                </h4>
+                                <p class="text-gray-600">Photoshop, CorelDraw, Figma (optional)</p>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition duration-300 inline-flex items-center">
+                            Abhi Puchho <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web Development Course -->
+        <section id="web-development" class="mb-16">
+            <div class="course-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex flex-row-reverse">
+                    <div class="md:w-1/3 bg-gradient-to-br from-blue-500 to-cyan-600 p-8 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-code text-6xl mb-4"></i>
+                            <h3 class="text-2xl font-bold">Website Development with JavaScript & Node.js</h3>
+                            <p class="mt-2 opacity-90">4 Mahine</p>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-2/3 p-8">
+                        <p class="text-gray-700 mb-6">
+                            Full stack web development seekh kar aap modern websites aur web applications bana sakte hain. Yeh course complete web developer banne ke liye perfect hai!
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i> Kya Seekhoge:
+                                </h4>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li>HTML5, CSS3 aur modern JavaScript</li>
+                                    <li>React.js frontend framework</li>
+                                    <li>Node.js aur Express backend</li>
+                                    <li>MongoDB database integration</li>
+                                    <li>RESTful APIs banana</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                    <i class="fas fa-user-graduate text-blue-500 mr-2"></i> Kon Join Kar Sakta Hai:
+                                </h4>
+                                <p class="text-gray-600">Basic programming knowledge wale students ke liye best hai.</p>
+                                
+                                <h4 class="font-semibold text-gray-800 mt-4 mb-2 flex items-center">
+                                    <i class="fas fa-laptop-code text-purple-500 mr-2"></i> Software & Tools:
+                                </h4>
+                                <p class="text-gray-600">VS Code, Node.js, MongoDB, Git/Github</p>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition duration-300 inline-flex items-center">
+                            Contact Karo <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Computer Basics Course -->
+        <section id="computer-basics" class="mb-16">
+            <div class="course-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-gradient-to-br from-green-500 to-teal-600 p-8 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-laptop text-6xl mb-4"></i>
+                            <h3 class="text-2xl font-bold">Basic Computer Course</h3>
+                            <p class="mt-2 opacity-90">2 Mahine</p>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-2/3 p-8">
+                        <p class="text-gray-700 mb-6">
+                            Computer ka basic knowledge har field mein zaroori hai. Yeh course unke liye perfect hai jo abhi computer use karna seekh rahe hain.
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i> Kya Seekhoge:
+                                </h4>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li>Computer hardware aur software ki basic knowledge</li>
+                                    <li>Windows operating system use karna</li>
+                                    <li>MS Office (Word, Excel, PowerPoint)</li>
+                                    <li>Internet use karna aur emails bhejna</li>
+                                    <li>Basic typing skills improve karna</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                    <i class="fas fa-user-graduate text-blue-500 mr-2"></i> Kon Join Kar Sakta Hai:
+                                </h4>
+                                <p class="text-gray-600">Complete beginners ke liye jo computer use karna seekhna chahte hain.</p>
+                                
+                                <h4 class="font-semibold text-gray-800 mt-4 mb-2 flex items-center">
+                                    <i class="fas fa-laptop-code text-purple-500 mr-2"></i> Software & Tools:
+                                </h4>
+                                <p class="text-gray-600">Windows OS, MS Office, Google Chrome</p>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="bg-green-600 text-white px-6 py-2 rounded-full font-medium hover:bg-green-700 transition duration-300 inline-flex items-center">
+                            Abhi Puchho <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Short Course -->
+        <section id="short-course" class="mb-16">
+            <div class="course-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex flex-row-reverse">
+                    <div class="md:w-1/3 bg-gradient-to-br from-yellow-500 to-orange-600 p-8 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-certificate text-6xl mb-4"></i>
+                            <h3 class="text-2xl font-bold">Basic Graphic Design Short Course</h3>
+                            <p class="mt-2 opacity-90">1 Mahina</p>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-2/3 p-8">
+                        <p class="text-gray-700 mb-6">
+                            Time kam hai? Yeh short course aapko graphic design ki basic skills sikhaega jisse aap simple designs bana sakein aur shuru kar sakein.
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i> Kya Seekhoge:
+                                </h4>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li>Photoshop ki basic understanding</li>
+                                    <li>Simple social media posts design karna</li>
+                                    <li>Basic photo editing techniques</li>
+                                    <li>Color theory aur typography basics</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                    <i class="fas fa-user-graduate text-blue-500 mr-2"></i> Kon Join Kar Sakta Hai:
+                                </h4>
+                                <p class="text-gray-600">Bus creative banne ka shauk hona chahiye! Koi prior experience zaroori nahi.</p>
+                                
+                                <h4 class="font-semibold text-gray-800 mt-4 mb-2 flex items-center">
+                                    <i class="fas fa-laptop-code text-purple-500 mr-2"></i> Software & Tools:
+                                </h4>
+                                <p class="text-gray-600">Photoshop, Canva (optional)</p>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="bg-orange-600 text-white px-6 py-2 rounded-full font-medium hover:bg-orange-700 transition duration-300 inline-flex items-center">
+                            Contact Karo <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programming Course -->
+        <section id="programming">
+            <div class="course-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-gradient-to-br from-red-500 to-pink-600 p-8 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-terminal text-6xl mb-4"></i>
+                            <h3 class="text-2xl font-bold">Programming Fundamentals</h3>
+                            <p class="mt-2 opacity-90">3 Mahine</p>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-2/3 p-8">
+                        <p class="text-gray-700 mb-6">
+                            Programming ki duniya mein pehla kadam! Yeh course aapko programming ki solid foundation dega jisse aap kisi bhi programming language ko asani se seekh sakte hain.
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i> Kya Seekhoge:
+                                </h4>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li>Programming concepts aur logic building</li>
+                                    <li>Python programming language</li>
+                                    <li>Data structures aur algorithms basics</li>
+                                    <li>Problem solving techniques</li>
+                                    <li>Simple projects banana</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                                    <i class="fas fa-user-graduate text-blue-500 mr-2"></i> Kon Join Kar Sakta Hai:
+                                </h4>
+                                <p class="text-gray-600">12th pass students aur college ke freshers ke liye perfect hai.</p>
+                                
+                                <h4 class="font-semibold text-gray-800 mt-4 mb-2 flex items-center">
+                                    <i class="fas fa-laptop-code text-purple-500 mr-2"></i> Software & Tools:
+                                </h4>
+                                <p class="text-gray-600">Python, VS Code, Jupyter Notebook</p>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="bg-red-600 text-white px-6 py-2 rounded-full font-medium hover:bg-red-700 transition duration-300 inline-flex items-center">
+                            Abhi Puchho <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-indigo-700 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Confuse Ho Rahe Ho Course Select Karne Mein?</h2>
+            <p class="text-xl mb-6 max-w-2xl mx-auto">Hamare counselors se baat karo aur apne liye best course choose karo!</p>
+            <a href="contact.html" class="bg-white text-indigo-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 inline-block">
+                Free Counseling Session <i class="fas fa-phone-alt ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-xl">CC</div>
+                        <span class="ml-3 text-xl font-semibold">Codecity Institute</span>
+                    </div>
+                    <p class="text-gray-400">Apne career ko next level pe le jane ka best platform. Humare saath seekho aur successful bano!</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="courses.html" class="text-gray-400 hover:text-white transition">Courses</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Courses</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#graphic-design" class="text-gray-400 hover:text-white transition">Graphic Design</a></li>
+                        <li><a href="#web-development" class="text-gray-400 hover:text-white transition">Web Development</a></li>
+                        <li><a href="#computer-basics" class="text-gray-400 hover:text-white transition">Computer Basics</a></li>
+                        <li><a href="#programming" class="text-gray-400 hover:text-white transition">Programming</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-3"></i> 35,38 National Plaza, Nr. Ashrafi Masjid, B/H Fatehwadi Cenal, Ahmedabad - 380055</li>
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-3"></i> +91 72268 22806 | 6026153244 </li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-3"></i> codecityinstitute@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Codecity Institute. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.querySelector('button').addEventListener('click', function() {
+            const navLinks = document.querySelector('.hidden.md\\:flex');
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('flex-col');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-16');
+            navLinks.classList.toggle('left-0');
+            navLinks.classList.toggle('right-0');
+            navLinks.classList.toggle('bg-white');
+            navLinks.classList.toggle('shadow-md');
+            navLinks.classList.toggle('p-4');
+            navLinks.classList.toggle('space-y-4');
+            navLinks.classList.toggle('space-x-8');
+        });
+    </script>
+</body>
+</html>
